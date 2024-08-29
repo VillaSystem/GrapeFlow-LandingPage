@@ -105,11 +105,12 @@ h1, h2, h3, h4 {
 }
 
 h1 {
-    font-size: 3rem;
-    color: orange;
-    padding-top:100px; ;
-    padding-right: 50px;
-    text-align: right;
+    font-family: 'Montserrat', sans-serif; /* O cualquier fuente similar que tengas disponible */
+    font-size: 5rem;
+    color: blueviolet; /* Púrpura */
+    text-align: center;
+    text-shadow: 7px 7px 7px rgba(3, 3, 2, 3); /* Sombra para el efecto de degradado */
+    letter-spacing: 0.2em;
 
 }
 
@@ -126,10 +127,35 @@ h3 {
 
 /* Estilos de la sección hero */
 #hero {
-    background: url('images/wine.png') no-repeat center center;
+    background: url('https://s3-alpha-sig.figma.com/img/564a/bff1/83736481b360c21cd5d5073eb6cbb9a9?Expires=1725840000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kxa8Ys2hq2Ru4HFmgbSAjtpa0q1I8Nmkrgp7Zlouv~dct3zd7TolbSccrwnEyIlD~CGnYCgm74sPeViZpUIKCGSqNcNQP17nzETBVKHz9Q5-pfqPlhlTyxyCNt8Mr3987~6eynXdIvWzbsngs1RcABC9QT8eOhRp6RFxS8G0HCEOFMgOyWwn4WXVfPevqYpL8o1ghVgzSiwgol~RUHlONqwAj-JbIJVJ2QSdOyRYgSRcA4z6xQEnwV4Kdl7-DsZgBecumCC~Ru35nK7XIkzaIz2Ya9DF4KCiOth2oSWVbUPwN5YGHJsaGzwQmSb1Eb47cCSwTkqyL1-WV1ibWwDlyA__') no-repeat center center;
     background-size: cover;
+    text-align: center;
+
 
 }
+#hero p {
+    font-size: 1.4rem; /* Ajusta el tamaño de la fuente */
+    color: black; /* Asegura que el texto sea visible en el fondo */
+    margin-bottom: 1rem; /* Espacio entre las líneas */
+    text-align: center; /* Centra el texto */
+}
+#hero button{
+    background-color: #6B46C1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1.7rem;
+    margin-top: 5rem;
+
+}
+#hero button:hover {
+    background-color: #553C9A;
+}
+
 
 
 /* Estilos de la sección de características */
