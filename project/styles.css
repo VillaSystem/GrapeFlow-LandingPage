@@ -1,0 +1,380 @@
+/* Reset y estilos base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Estilos del encabezado */
+header {
+    background: url('https://i.pinimg.com/originals/98/32/36/983236a02e5d7e4d62d85c35445b6563.jpg') no-repeat center center;
+    background-size: cover; /* Asegura que la imagen cubra todo el área del header */
+    color: #fff;
+
+    position: fixed;
+    width: 100%;
+    height: 100px;
+    text-align: center; /* Centra el texto */
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 100px;
+    height: 100px;
+}
+
+.logo span {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-left: 15px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #F6AD55;
+}
+
+.cta-button {
+    background-color: #F6AD55;
+    color: #6B46C1;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #ED8936;
+    transform: scale(1.05);
+}
+
+/* Estilos de las secciones */
+main {
+    padding-top: 80px;
+}
+
+section {
+    padding: 4rem 0;
+}
+
+section:nth-child(even) {
+    background-color: #F7FAFC;
+}
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    color: orange;
+    padding-top:100px; ;
+    padding-right: 50px;
+    text-align: right;
+
+}
+
+h2 {
+    font-size: 2.5rem;
+    color: #6B46C1;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.5rem;
+    color: #2D3748;
+}
+
+/* Estilos de la sección hero */
+#hero {
+    background: url('images/wine.png') no-repeat center center;
+    background-size: cover;
+
+}
+
+
+/* Estilos de la sección de características */
+#caracteristicas .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+#caracteristicas ul {
+    list-style: none;
+}
+
+#caracteristicas li {
+    display: flex;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+#caracteristicas li img {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+}
+
+/* Estilos de la sección de planes */
+#planes .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #6B46C1;
+}
+
+.price {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 1rem 0;
+    color: #4A5568;
+}
+
+.card ul {
+    list-style: none;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.card li {
+    margin-bottom: 0.5rem;
+    padding-left: 20px;
+    position: relative;
+}
+
+.card li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: #6B46C1;
+}
+
+.card button {
+    background-color: #6B46C1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.card button:hover {
+    background-color: #553C9A;
+}
+
+/* Estilos de la sección de equipo */
+#equipo .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+.team-member {
+    text-align: center;
+}
+
+.team-member img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    object-fit: cover;
+}
+
+/* Estilos de la sección sobre nosotros */
+#sobre-nosotros .content {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos del formulario de contacto */
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+#contact-form input,
+#contact-form textarea {
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    border: 1px solid #CBD5E0;
+    border-radius: 4px;
+}
+
+#contact-form textarea {
+    min-height: 150px;
+}
+
+#contact-form button {
+    background-color: #6B46C1;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+#contact-form button:hover {
+    background-color: #553C9A;
+}
+
+/* Estilos del pie de página */
+footer {
+    background-color: #2D3748;
+    color: #fff;
+    padding: 2rem 0;
+}
+
+footer .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+}
+
+footer h4 {
+    color: #F6AD55;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #F6AD55;
+}
+
+.copyright {
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid #4A5568;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    nav ul {
+        margin-top: 1rem;
+    }
+
+    .cta-button {
+        margin-top: 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    #caracteristicas .grid,
+    #planes .grid,
+    #equipo .grid,
+    footer .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%;
+        padding: 0 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.8rem;
+    }
+
+    .card {
+        padding: 1.5rem;
+    }
+
+    .team-member img {
+        width: 150px;
+        height: 150px;
+    }
+}
