@@ -114,16 +114,12 @@ h1 {
 
 }
 
-h2 {
-    font-size: 2.5rem;
-    color: #6B46C1;
-    text-align: center;
-}
-
 h3 {
     font-size: 1.5rem;
-    color: #2D3748;
+    color: orange;
+    font-weight: 800;
 }
+
 
 /* Estilos de la sección hero */
 #hero {
@@ -167,19 +163,30 @@ h3 {
 
 #caracteristicas ul {
     list-style: none;
+    padding: 0;
 }
 
 #caracteristicas li {
     display: flex;
-    align-items: start;
+    flex-direction: column; /* Cambia la dirección de flexión a columna */
+    align-items: center;
     margin-bottom: 1rem;
+    padding: 1rem; /* Espacio interno del cuadro */
+    border: 2px solid #9b59b6; /* Borde morado */
+    border-radius: 8px; /* Bordes redondeados */
 }
 
 #caracteristicas li img {
-    margin-right: 10px;
-    width: 30px;
-    height: 30px;
+    margin-bottom: 0.5rem; /* Espacio entre imagen y texto */
+    width: 70px;
+    height: 70px;
 }
+
+#caracteristicas li span {
+    color: #333; /* Color del texto para contraste */
+    text-align: center; /* Centra el texto debajo de la imagen */
+}
+
 
 /* Estilos de la sección de planes */
 #planes .grid {
