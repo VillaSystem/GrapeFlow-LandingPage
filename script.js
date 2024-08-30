@@ -20,7 +20,6 @@ document.addEventListener('DOMContentLoaded', function() {
     if (contactForm) {
         contactForm.addEventListener('submit', function(e) {
             e.preventDefault();
-            // Aquí normalmente enviarías los datos del formulario a un servidor
             // Para este ejemplo, solo mostraremos un mensaje de alerta
             alert('Gracias por tu mensaje. Nos pondremos en contacto contigo pronto.');
             this.reset();
@@ -47,6 +46,6 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     } else {
         // Fallback para navegadores que no soportan lazy loading
-        // Aquí podrías usar una biblioteca de terceros para lazy loading
+
     }
 });
