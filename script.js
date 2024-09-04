@@ -48,4 +48,30 @@ document.addEventListener('DOMContentLoaded', function() {
         // Fallback para navegadores que no soportan lazy loading
 
     }
+    const scrollRevealOption={
+        distance: '50px',
+        origin: 'bottom',
+        duration: 1000,
+    };
+    ScrollReveal().reveal("h1",{
+        ...scrollRevealOption,
+        origin:"right",
+    });
+
+
+    ScrollReveal().reveal("ul",{
+        ...scrollRevealOption,
+        origin:"right",
+        delay: 500,
+    });
+    ScrollReveal().reveal(".logo",{
+        ...scrollRevealOption,
+        origin:"right",
+        delay: 500,
+    });
+    ScrollReveal().reveal("#hero button",{
+        ...scrollRevealOption,
+        origin:"right",
+        delay:750 ,
+    });
 });
