@@ -3,246 +3,66 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!--Title -->
-  <title>GrapeFlow - Conecta con el Mundo del Vino</title>
-  <link rel="stylesheet" href="styles.css">
+  <title>Grapeflow</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Asegúrate de incluir tu CSS -->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    #hero {
+      background: url('your-background-image.jpg') no-repeat center center/cover;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+    .login-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #5c6bc0; /* Cambia el color de fondo según sea necesario */
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none; /* Quitar subrayado */
+      font-size: 16px;
+      transition: background-color 0.3s;
+      margin: 20px 0;
+    }
+    .login-button:hover {
+      background-color: #3f51b5; /* Cambia a un color más oscuro al pasar el ratón */
+    }
+    .sign-up-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #f44336; /* Cambia el color de fondo según sea necesario */
+      color: white;
+      text-align: center;
+      border-radius: 5px;
+      text-decoration: none; /* Quitar subrayado */
+      font-size: 16px;
+      transition: background-color 0.3s;
+    }
+    .sign-up-button:hover {
+      background-color: #d32f2f; /* Cambia a un color más oscuro al pasar el ratón */
+    }
+  </style>
 </head>
 <body>
-<header>
+
+<section id="hero">
   <div class="container">
-    <!--Logo-image -->
-    <div class="logo">
-      <img src="https://github.com/VillaSystem/grupo2-project-report/blob/doc/images/logos/LogoGrapeFlowPurpleBackGround.png?raw=true" alt="GrapeFlow Logo" width="50" height="50">
-      <span>GrapeFlow</span>
-    </div>
-    <!--Nav -->
-    <nav>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#sobre-nosotros">Servicio</a></li>
-        <li><a href="#caracteristicas">Funcionalidades</a></li>
-        <li><a href="#planes">Planes</a></li>
-        <li><a href="#equipo">Nosotros</a></li>
-
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <h1>GRAPEFLOW</h1>
+    <p>La solución integral para optimizar la producción,</p>
+    <p>administración y distribución de tus vinos y piscos.</p>
+    <a href="https://grapeflowweb.netlify.app" class="login-button">Log in</a>
+    <span style="margin: 0 25px;"></span>
+    <a href="https://your-signup-page-url.com" class="sign-up-button">Sign up</a>
   </div>
-</header>
+</section>
 
-<main>
-  <section id="hero">
-    <div class="container">
-      <h1>GRAPEFLOW   </h1>
-        <p>La solución integral para optimizar la producción,</p>
-      <p> administración y distribución de tus vinos y piscos.</p>
-        <button>Log in</button>
-      <span style="margin: 0 25px;"></span>
-      <button>Sign up</button>
-
-    </div>
-  </section>
-
-  <section id="sobre-nosotros">
-    <div class="container">
-      <div class="content">
-        <h3>GrapeFlow Service</h3>
-        <p>GrapeFlow es una aplicación diseñada para optimizar la producción y distribución de vinos y piscos. Proporcionamos a productores y distribuidores herramientas para gestionar inventarios, realizar seguimiento de pedidos y administrar la relación con clientes. Además, ofrecemos reportes y análisis detallados, ayudando a mejorar la eficiencia operativa y la toma de decisiones. Adaptable a las necesidades de cada empresa, GrapeFlow facilita un control integral de todo el proceso productivo.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="caracteristicas">
-    <div class="container">
-      <div class="grid">
-        <div>
-          <ul>
-            <li>
-              <img src="images/imagenCard.png" alt="Icono" width="30" height="30">
-              <span>Gestion de</span>
-              <span>Inventarios</span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(3).png" alt="Icono" width="30" height="30">
-              <span>Optimizacion del </span>
-              <span>Proceso de </span>
-              <span> Vinificacion</span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(6).png" alt="Icono" width="30" height="30">
-              <span>Gestion de </span>
-              <span>Calidad</span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(9).png" alt="Icono" width="30" height="30">
-              <span>Seguridad y cumplimiento normativo</span>
-              <span>Cumplimiento</span>
-              <span>Normativo</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-
-          <ul>
-            <li>
-              <img src="images/imagenCard%20(1).png" alt="Icono" width="30" height="30">
-              <span>Seguimiento de pedidos</span>
-              <span>Pedidos</span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(4).png" alt="Icono" width="30" height="30">
-              <span>Reportes</span>
-              <span>Personalizados</span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(7).png" alt="Icono" width="30" height="30">
-              <span>Integracion con </span>
-              <span>Sistemas de</span>
-              <span>Terceros</span>
-            </li>
-          </ul>
-        </div>
-        <div>
-          <ul>
-            <li>
-              <img src="images/imagenCard%20(2).png" alt="Icono" width="30" height="30">
-              <span>Administracion </span>
-              <span> de Clientes</span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(5).png" alt="Icono" width="30" height="30">
-              <span>Planificacion de </span>
-              <span>la Produccion </span>
-            </li>
-            <li>
-              <img src="images/imagenCard%20(8).png" alt="Icono" width="30" height="30">
-              <span>Soporte y </span>
-              <span>mantenimiento</span>
-            </li>
-          </ul>
-
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="planes">
-    <div class="container">
-      <h2>Nuestros Planes</h2>
-      <div class="grid">
-        <div class="card">
-          <h3>Plan Basic</h3>
-          <p class="price">S/ 0</p>
-          <ul>
-            <li>Gestión de inventarios</li>
-            <li>Seguimiento de pedidos</li>
-            <li>Administración básica de clientes</li>
-            <li>Reportes limitados</li>
-            <li>Soporte por correo electrónico</li>
-          </ul>
-          <button>Elegir Plan</button>
-        </div>
-        <div class="card">
-          <h3>Plan Pro</h3>
-          <p class="price">S/ 15</p>
-          <ul>
-            <li>Todo lo del plan Basic</li>
-            <li>Optimización del proceso de vinificación</li>
-            <li>Reportes personalizados</li>
-            <li>Integración con sistemas de terceros</li>
-            <li>Soporte prioritario</li>
-          </ul>
-          <button>Elegir Plan</button>
-        </div>
-        <div class="card">
-          <h3>Plan Premium</h3>
-          <p class="price">S/ 25</p>
-          <ul>
-            <li>Todo lo del plan Pro</li>
-            <li>Planificación avanzada de la producción</li>
-            <li>Gestión de calidad avanzada</li>
-            <li>Acceso a todas las funciones de la plataforma</li>
-            <li>Soporte dedicado 24/7</li>
-          </ul>
-          <button>Elegir Plan</button>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section id="equipo">
-    <div class="container">
-      <h2>Nuestro Equipo</h2>
-      <div class="grid">
-        
-        <div class="team-member">
-          <img src="images/gustavo.png" alt="Miembro del equipo 1" width="200" height="200">
-          <h3>Gustavo Huanca</h3>
-        </div>
-
-        <div class="team-member">
-          <img src="images/DiegoHuincho.jpg" alt="Miembro del equipo 2" width="200" height="200">
-          <h3>Diego Huincho</h3>
-        </div>
-
-        <div class="team-member">
-          <img src="images/Angelo.png" alt="Miembro del equipo 3" width="200" height="200">
-          <h3>Angelo Curi</h3>
-        </div>
-
-        <div class="team-member">
-          <img src="images/Fernando.jpg" alt="Miembro del equipo 4" width="200" height="200">
-          <h3>Fernando Salhuana</h3>
-        </div>
-        
-        <div class="team-member">
-          <img src="images/Oscar.png" alt="Miembro del equipo 5" width="200" height="200">
-          <h3>Oscar Armas</h3>
-        </div>
-        
-      </div>
-    </div>
-  </section>
-
-
-
-  <section id="contacto">
-    <div class="container">
-      <h2>Contacto</h2>
-      <form id="contact-form">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Correo Electrónico" required>
-        <textarea placeholder="Mensaje" required></textarea>
-        <button type="submit">Enviar</button>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="container">
-    <div class="grid">
-      <div>
-        <h4>Información de Contacto</h4>
-        <p>Dirección: Av Alameda San Marcos 11, Chorrillos 15067</p>
-        <p>Teléfono: (123) 456-7890</p>
-        <p>Correo Electrónico: contacto@grapeflow.com</p>
-      </div>
-      <div>
-        <h4>Enlaces Adicionales</h4>
-        <ul>
-          <li><a href="https://www.freeprivacypolicy.com/live/b6508c20-b268-4f91-8ab9-45175bee5b69" target="_blank">Políticas de Privacidad</a></li>
-          <li><a href="https://www.freeprivacypolicy.com/live/79d2e57c-2a68-4c38-8481-d2e47d551dd6" target="_blank">Términos de Servicio</a></li>
-          <li><a href="https://www.facebook.com/people/GrapeFlow/61566267995565/?is_tour_dismissed" target="_blank!">Redes Sociales</a></li>
-        </ul>
-      </div>
-    </div>
-    <div class="copyright">
-      <p>&copy; <span id="current-year"></span> GrapeFlow. Todos los derechos reservados.</p>
-    </div>
-  </div>
-</footer>
-<script src="https://unpkg.com/scrollreveal"></script>
-<script src="script.ts"></script>
 </body>
 </html>
