@@ -3,16 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--Title -->
   <title>GrapeFlow - Conecta con el Mundo del Vino</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header>
   <div class="container">
+    <!--Logo-image -->
     <div class="logo">
       <img src="https://github.com/VillaSystem/grupo2-project-report/blob/doc/images/logos/LogoGrapeFlowPurpleBackGround.png?raw=true" alt="GrapeFlow Logo" width="50" height="50">
       <span>GrapeFlow</span>
     </div>
+    <!--Nav -->
     <nav>
       <ul>
         <li><a href="#inicio">Inicio</a></li>
@@ -20,6 +23,7 @@
         <li><a href="#caracteristicas">Funcionalidades</a></li>
         <li><a href="#planes">Planes</a></li>
         <li><a href="#equipo">Nosotros</a></li>
+
         <li><a href="#contacto">Contacto</a></li>
       </ul>
     </nav>
@@ -29,12 +33,13 @@
 <main>
   <section id="hero">
     <div class="container">
-      <h1>GRAPEFLOW</h1>
+      <h1>GRAPEFLOW   </h1>
       <p>La solución integral para optimizar la producción,</p>
       <p> administración y distribución de tus vinos y piscos.</p>
-      <a href="https://grapeflowweb.netlify.app" class="button">Log in</a>
+      <button>Log in</button>
       <span style="margin: 0 25px;"></span>
       <button>Sign up</button>
+
     </div>
   </section>
 
@@ -77,6 +82,7 @@
           </ul>
         </div>
         <div>
+
           <ul>
             <li>
               <img src="images/imagenCard%20(1).png" alt="Icono" width="30" height="30">
@@ -114,6 +120,7 @@
               <span>mantenimiento</span>
             </li>
           </ul>
+
         </div>
       </div>
     </div>
@@ -167,41 +174,45 @@
     <div class="container">
       <h2>Nuestro Equipo</h2>
       <div class="grid">
+
         <div class="team-member">
           <img src="images/gustavo.png" alt="Miembro del equipo 1" width="200" height="200">
           <h3>Gustavo Huanca</h3>
         </div>
+
         <div class="team-member">
           <img src="images/DiegoHuincho.jpg" alt="Miembro del equipo 2" width="200" height="200">
           <h3>Diego Huincho</h3>
         </div>
+
         <div class="team-member">
           <img src="images/Angelo.png" alt="Miembro del equipo 3" width="200" height="200">
           <h3>Angelo Curi</h3>
         </div>
+
         <div class="team-member">
           <img src="images/Fernando.jpg" alt="Miembro del equipo 4" width="200" height="200">
           <h3>Fernando Salhuana</h3>
         </div>
+
         <div class="team-member">
           <img src="images/Oscar.png" alt="Miembro del equipo 5" width="200" height="200">
           <h3>Oscar Armas</h3>
         </div>
+
       </div>
     </div>
   </section>
 
+
+
   <section id="contacto">
     <div class="container">
       <h2>Contacto</h2>
-      <p>Si tienes alguna pregunta o deseas más información sobre nuestros servicios, no dudes en contactarnos a través del siguiente formulario:</p>
-      <form action="tu_enlace_de_formulario.html" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" required></textarea>
+      <form id="contact-form">
+        <input type="text" placeholder="Nombre" required>
+        <input type="email" placeholder="Correo Electrónico" required>
+        <textarea placeholder="Mensaje" required></textarea>
         <button type="submit">Enviar</button>
       </form>
     </div>
@@ -210,9 +221,28 @@
 
 <footer>
   <div class="container">
-    <p>© 2024 GrapeFlow. Todos los derechos reservados.</p>
+    <div class="grid">
+      <div>
+        <h4>Información de Contacto</h4>
+        <p>Dirección: Av Alameda San Marcos 11, Chorrillos 15067</p>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Correo Electrónico: contacto@grapeflow.com</p>
+      </div>
+      <div>
+        <h4>Enlaces Adicionales</h4>
+        <ul>
+          <li><a href="https://www.freeprivacypolicy.com/live/b6508c20-b268-4f91-8ab9-45175bee5b69" target="_blank">Políticas de Privacidad</a></li>
+          <li><a href="https://www.freeprivacypolicy.com/live/79d2e57c-2a68-4c38-8481-d2e47d551dd6" target="_blank">Términos de Servicio</a></li>
+          <li><a href="https://www.facebook.com/people/GrapeFlow/61566267995565/?is_tour_dismissed" target="_blank!">Redes Sociales</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">
+      <p>&copy; <span id="current-year"></span> GrapeFlow. Todos los derechos reservados.</p>
+    </div>
   </div>
 </footer>
-
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="script.ts"></script>
 </body>
 </html>
