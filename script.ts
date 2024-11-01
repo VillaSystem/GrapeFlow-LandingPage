@@ -53,6 +53,19 @@ document.addEventListener('DOMContentLoaded', () => {
         // Fallback para navegadores que no soportan lazy loading
     }
 
+
+    ScrollReveal().reveal("#videos .section-title", {
+        ...scrollRevealOption,
+        origin: "top",
+        delay: 300,
+    });
+
+    ScrollReveal().reveal("#videos .video-item", {
+        ...scrollRevealOption,
+        origin: "bottom",
+        interval: 200, 
+    });
+
     const scrollRevealOption = {
         distance: '50px',
         origin: 'bottom',
